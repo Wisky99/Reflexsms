@@ -1,3 +1,11 @@
+
+██████╗░███████╗███████╗██╗░░░░░███████╗██╗░░██╗
+██╔══██╗██╔════╝██╔════╝██║░░░░░██╔════╝╚██╗██╔╝
+██████╔╝█████╗░░█████╗░░██║░░░░░█████╗░░░╚███╔╝░
+██╔══██╗██╔══╝░░██╔══╝░░██║░░░░░██╔══╝░░░██╔██╗░
+██║░░██║███████╗██║░░░░░███████╗███████╗██╔╝╚██╗
+╚═╝░░╚═╝╚══════╝╚═╝░░░░░╚══════╝╚══════╝╚═╝░░╚═╝
+
 import discord,time
 import requests
 from requests import post,Session
@@ -281,8 +289,8 @@ async def sms(ctx, phone, amount:int):
     if (amount < 151):
        
       embes = discord.Embed(title="Reflex SmS", description="Bot by : Reflex",color=0xff4612)
-      embes.add_field(name="กำลังยิงไปที่เบอร์",value=phone)
-      embes.add_field(name="เป็นเวลา",value=phone"นาที)
+      embes.add_field(name="> กำลังยิงไปที่เบอร์",value=phone)
+      embes.add_field(name="> เสร็จสิ้นใน",value=phone)
       ima = "https://phoneky.co.uk/thumbs/screensavers/down/technology/smsisloadi_aleaqts4.gif"
       embes.set_image(url=ima)
     
